@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="test_MasterPage_CRUD_sinhvien._default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d1, .d3 {
+            text-align: center;
+            background: #00ffff
+        }
+
+        .d2 {
+            position: absolute;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <h1>Nguyễn Bá Trung</h1>
+                <div class="d1">
+                    <h1>Nguyễn Bá Trung</h1>
+                </div>
+                <div class="d2">
+                    <asp:Button ID="btn3" Text="Danh sach sinh vien" runat="server" PostBackUrl="~/danhsach.aspx" />
+
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="noidung" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
